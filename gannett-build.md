@@ -38,4 +38,4 @@ git checkout [-b] my-update-branch
 git fetch upstream --prune
 git rebase -i upstream/master my-update-branch
 ```
-Who know, you might not even have any merge conflicts! :crossed_fingers:
+Who knows, you might not even have any merge conflicts! :crossed_fingers:
