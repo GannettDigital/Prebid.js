@@ -23,9 +23,11 @@ build-dev:
 	@echo "Prebid dev built to ./build/dev/prebid.js"
 
 sync-dist: build
-	gsutil cp build/dist/prebid.js gs://ads-gci-www-gannett-cdn-com/vendor/pbjsandwich.min.js
+	@gsutil cp build/dist/prebid.js gs://ads-gci-www-gannett-cdn-com/vendor/pbjsandwich.min.js
+	@curl -s -X PURGE https://www.gannett-cdn.com/ads/vendor/pbjsandwich.min.js > /dev/null
 
 sync-dev: build-dev
-	gsutil cp build/dev/prebid.js gs://ads-gci-www-gannett-cdn-com/vendor/pbjsandwich.js
+	@gsutil cp build/dev/prebid.js gs://ads-gci-www-gannett-cdn-com/vendor/pbjsandwich.js
+	@curl -s -X PURGE https://www.gannett-cdn.com/ads/vendor/pbjsandwich.js > /dev/null
 
 sync: sync-dev sync-dist
