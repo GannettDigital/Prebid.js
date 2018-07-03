@@ -11,7 +11,7 @@ build:
 	@git checkout -q master -- modules.json
 	@echo "Checking out aolBidAdapter from Prebid 1.15.0"
 	@git checkout -q tags/1.15.0 -- modules/aolBidAdapter.js
-	@gulp build --modules=modules.json
+	@gulp --silent build --modules=modules.json
 	@git checkout -q master
 	@git checkout -q HEAD -- modules/aolBidAdapter.js
 	@echo "Prebid built to ./build/dist/prebid.js"
@@ -23,7 +23,7 @@ build-dev:
 	@git checkout -q master -- modules.json
 	@echo "Checking out aolBidAdapter from Prebid 1.15.0"
 	@git checkout -q tags/1.15.0 -- modules/aolBidAdapter.js
-	@gulp build-bundle-dev --modules=modules.json
+	@gulp --silent build-bundle-dev --modules=modules.json
 	@git checkout -q master
 	@git checkout -q HEAD -- modules/aolBidAdapter.js
 	@echo "Prebid dev built to ./build/dev/prebid.js"
