@@ -11,9 +11,10 @@ build:
 	@git checkout -q master -- modules.json
 	@echo "Checking out aolBidAdapter from Prebid 1.15.0"
 	@git checkout -q tags/1.15.0 -- modules/aolBidAdapter.js
-	@gulp --silent build --modules=modules.json
+	@gulp build --modules=modules.json --silent
 	@git checkout -q master
 	@git checkout -q HEAD -- modules/aolBidAdapter.js
+	@git rm -qf modules/oneVideoBidAdapter.js
 	@echo "Prebid built to ./build/dist/prebid.js"
 
 build-dev:
@@ -23,9 +24,12 @@ build-dev:
 	@git checkout -q master -- modules.json
 	@echo "Checking out aolBidAdapter from Prebid 1.15.0"
 	@git checkout -q tags/1.15.0 -- modules/aolBidAdapter.js
-	@gulp --silent build-bundle-dev --modules=modules.json
+	@echo "Checking out oneVideoBidAdapter from Prebid 1.15.0"
+	@git checkout -q tags/1.15.0 -- modules/oneVideoBidAdapter.js
+	@gulp build-bundle-dev --modules=modules.json --silent
 	@git checkout -q master
 	@git checkout -q HEAD -- modules/aolBidAdapter.js
+	@git rm -qf modules/oneVideoBidAdapter.js
 	@echo "Prebid dev built to ./build/dev/prebid.js"
 
 sync-dist: build
