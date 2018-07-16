@@ -11,6 +11,8 @@ build:
 	@git checkout -q master -- modules.json
 	@echo "Checking out aolBidAdapter from Prebid 1.15.0"
 	@git checkout -q tags/1.15.0 -- modules/aolBidAdapter.js
+	@echo "Checking out oneVideoBidAdapter from Prebid 1.15.0"
+	@git checkout -q tags/1.15.0 -- modules/oneVideoBidAdapter.js
 	@gulp build --modules=modules.json --silent
 	@git checkout -q master
 	@git checkout -q HEAD -- modules/aolBidAdapter.js
