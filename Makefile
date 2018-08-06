@@ -9,11 +9,8 @@ build:
 	@git checkout -q tags/$(PREBID_VERSION)
 	@yarn install --silent
 	@git checkout -q master -- modules.json
-	@echo "Checking out oneVideoBidAdapter from Prebid 1.15.0"
-	@git checkout -q tags/1.15.0 -- modules/oneVideoBidAdapter.js
 	@gulp build --modules=modules.json --silent
 	@git checkout -q master
-	@git rm -qf modules/oneVideoBidAdapter.js
 	@echo "Prebid built to ./build/dist/prebid.js"
 
 build-dev:
@@ -21,11 +18,8 @@ build-dev:
 	@git checkout -q tags/$(PREBID_VERSION)
 	@yarn install --silent
 	@git checkout -q master -- modules.json
-	@echo "Checking out oneVideoBidAdapter from Prebid 1.15.0"
-	@git checkout -q tags/1.15.0 -- modules/oneVideoBidAdapter.js
 	@gulp build-bundle-dev --modules=modules.json --silent
 	@git checkout -q master
-	@git rm -qf modules/oneVideoBidAdapter.js
 	@echo "Prebid dev built to ./build/dev/prebid.js"
 
 sync-dist: build
@@ -34,6 +28,6 @@ sync-dist: build
 
 sync-dev: build-dev
 	@gsutil cp build/dev/prebid.js gs://ads-gci-www-gannett-cdn-com/vendor/pbjsandwich.js
-	@curl -s -X PURGE https://www.gannett-cdn.com/partner/vendor/pbjsandwich.js > /dev/null
+	@fpurge cdn https://www.gannett-cdn.com/partner/vendor/pbjsandwich.js
 
 sync: sync-dev sync-dist
