@@ -3,6 +3,7 @@
   "aolBidAdapter",
   "appnexusAstBidAdapter",
   "appnexusBidAdapter",
+  "audienceNetworkBidAdapter",
   "colossussspBidAdapter",
   "criteoBidAdapter",
   "dfpAdServerVideo",
