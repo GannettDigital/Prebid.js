@@ -4,6 +4,7 @@
   "appnexusBidAdapter",
   "audienceNetworkBidAdapter",
   "colossussspBidAdapter",
+  "consumableBidAdapter",
   "criteoBidAdapter",
   "dfpAdServerVideo",
   "ixBidAdapter",
