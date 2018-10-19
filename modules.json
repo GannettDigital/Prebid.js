@@ -16,6 +16,5 @@
   "sonobiBidAdapter",
   "telariaBidAdapter",
   "tripleliftBidAdapter",
-  "trustxBidAdapter",
-  "yieldbotBidAdapter"
+  "trustxBidAdapter"
 ]
