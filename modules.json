@@ -17,5 +17,6 @@
   "spotxBidAdapter",
   "telariaBidAdapter",
   "tripleliftBidAdapter",
-  "trustxBidAdapter"
+  "trustxBidAdapter",
+  "staqAnalyticsAdapter"
 ]
