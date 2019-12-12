@@ -3,10 +3,10 @@
   "appnexusBidAdapter",
   "audienceNetworkBidAdapter",
   "colossussspBidAdapter",
+  "consentManagementUsp",
   "consumableBidAdapter",
   "criteoBidAdapter",
   "dfpAdServerVideo",
-  "ixBidAdapter",
   "kargoBidAdapter",
   "oneVideoBidAdapter",
   "openxBidAdapter",
@@ -16,5 +16,4 @@
   "spotxBidAdapter",
   "tripleliftBidAdapter",
   "trustxBidAdapter",
-  "staqAnalyticsAdapter"
 ]
