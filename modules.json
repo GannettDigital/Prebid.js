@@ -15,5 +15,7 @@
   "sonobiBidAdapter",
   "spotxBidAdapter",
   "tripleliftBidAdapter",
-  "trustxBidAdapter"
+  "trustxBidAdapter",
+  "trustxBidAdapter",
+  "yieldmoBidAdapter"
 ]
