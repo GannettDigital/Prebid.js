@@ -1,7 +1,6 @@
 [
   "aolBidAdapter",
   "appnexusBidAdapter",
-  "audienceNetworkBidAdapter",
   "colossussspBidAdapter",
   "consentManagementUsp",
   "consumableBidAdapter",
@@ -14,8 +13,7 @@
   "rubiconBidAdapter",
   "sonobiBidAdapter",
   "spotxBidAdapter",
+  "staqAnalyticsAdapter"
   "tripleliftBidAdapter",
   "trustxBidAdapter",
-  "trustxBidAdapter",
-  "yieldmoBidAdapter"
 ]
