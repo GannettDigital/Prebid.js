@@ -13,7 +13,7 @@
   "rubiconBidAdapter",
   "sonobiBidAdapter",
   "spotxBidAdapter",
-  "staqAnalyticsAdapter"
+  "staqAnalyticsAdapter",
   "tripleliftBidAdapter",
-  "trustxBidAdapter",
+  "trustxBidAdapter"
 ]
