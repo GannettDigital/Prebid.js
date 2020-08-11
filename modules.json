@@ -16,6 +16,7 @@
   "sonobiBidAdapter",
   "spotxBidAdapter",
   "staqAnalyticsAdapter",
+  "teadsBidAdapter",
   "tripleliftBidAdapter",
   "trustxBidAdapter"
 ]
