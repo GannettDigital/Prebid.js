@@ -9,6 +9,7 @@
   "kargoBidAdapter",
   "gdprEnforcement",
   "liveIntentIdSystem",
+  "identityLinkIdSystem",
   "oneVideoBidAdapter",
   "openxBidAdapter",
   "pubmaticBidAdapter",
