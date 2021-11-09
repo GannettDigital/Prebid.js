@@ -6,7 +6,6 @@ default: build
 
 build:
 	@echo "Building Prebid Version: $(PREBID_VERSION)"
-	@nvm use
 	@git checkout -q tags/$(PREBID_VERSION)
 	@yarn install --silent
 	@git checkout -q master -- modules.json
@@ -16,7 +15,6 @@ build:
 
 build-dev:
 	@echo "Building Prebid Dev Version: $(PREBID_VERSION)"
-	@nvm use
 	@git checkout -q tags/$(PREBID_VERSION)
 	@yarn install --silent
 	@git checkout -q master -- modules.json
