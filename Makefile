@@ -5,6 +5,7 @@ PREBID_VERSION ?= $(shell cat gannett-version.txt)
 default: build
 
 build:
+	@nvm use --silent
 	@echo "Building Prebid Version: $(PREBID_VERSION)"
 	@git checkout -q tags/$(PREBID_VERSION)
 	@yarn install --silent
@@ -14,6 +15,7 @@ build:
 	@echo "Prebid built to ./build/dist/prebid.js"
 
 build-dev:
+	@nvm use --silent
 	@echo "Building Prebid Dev Version: $(PREBID_VERSION)"
 	@git checkout -q tags/$(PREBID_VERSION)
 	@yarn install --silent
