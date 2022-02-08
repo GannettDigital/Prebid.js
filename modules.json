@@ -20,5 +20,6 @@
   "teadsBidAdapter",
   "tripleliftBidAdapter",
   "trustxBidAdapter",
+  "yahoosspBidAdapter",
   "yieldmoBidAdapter"
 ]
