@@ -1,5 +1,4 @@
 [
-  "aolBidAdapter",
   "appnexusBidAdapter",
   "colossussspBidAdapter",
   "consentManagementUsp",
@@ -11,7 +10,6 @@
   "ixBidAdapter",
   "kargoBidAdapter",
   "liveIntentIdSystem",
-  "oneVideoBidAdapter",
   "openxBidAdapter",
   "pubmaticBidAdapter",
   "rubiconBidAdapter",
@@ -20,6 +18,5 @@
   "teadsBidAdapter",
   "tripleliftBidAdapter",
   "trustxBidAdapter",
-  "yahoosspBidAdapter",
   "yieldmoBidAdapter"
 ]
