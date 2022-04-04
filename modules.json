@@ -8,7 +8,6 @@
   "gdprEnforcement",
   "identityLinkIdSystem",
   "ixBidAdapter",
-  "kargoBidAdapter",
   "liveIntentIdSystem",
   "openxBidAdapter",
   "pubmaticBidAdapter",
@@ -18,5 +17,6 @@
   "teadsBidAdapter",
   "tripleliftBidAdapter",
   "trustxBidAdapter",
-  "yieldmoBidAdapter"
+  "yieldmoBidAdapter",
+  "yahoosspBidAdapter"
 ]
