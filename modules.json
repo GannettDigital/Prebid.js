@@ -2,10 +2,10 @@
   "appnexusBidAdapter",
   "colossussspBidAdapter",
   "consentManagementUsp",
-  "consumableBidAdapter",
   "criteoBidAdapter",
   "dfpAdServerVideo",
   "gdprEnforcement",
+  "gptPreAuction",
   "identityLinkIdSystem",
   "ixBidAdapter",
   "liveIntentIdSystem",
@@ -17,6 +17,6 @@
   "teadsBidAdapter",
   "tripleliftBidAdapter",
   "trustxBidAdapter",
-  "yieldmoBidAdapter",
-  "yahoosspBidAdapter"
+  "yahoosspBidAdapter",
+  "yieldmoBidAdapter"
 ]
