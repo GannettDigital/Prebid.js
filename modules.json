@@ -6,6 +6,7 @@
   "criteoBidAdapter",
   "dfpAdServerVideo",
   "gdprEnforcement",
+  "gridBidAdapter",
   "identityLinkIdSystem",
   "ixBidAdapter",
   "liveIntentIdSystem",
@@ -18,7 +19,6 @@
   "taboolaBidAdapter",
   "teadsBidAdapter",
   "tripleliftBidAdapter",
-  "trustxBidAdapter",
   "yahoosspBidAdapter",
   "yieldmoBidAdapter"
 ]
