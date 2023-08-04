@@ -10,7 +10,6 @@
   "ixBidAdapter",
   "openxBidAdapter",
   "prebidServerBidAdapter",
-  "pubmaticBidAdapter",
   "rubiconBidAdapter",
   "sonobiBidAdapter",
   "taboolaBidAdapter",
