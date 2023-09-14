@@ -2,6 +2,7 @@
   "appnexusBidAdapter",
   "atsAnalyticsAdapter",
   "colossussspBidAdapter",
+  "consentManagement",
   "consentManagementUsp",
   "criteoBidAdapter",
   "dfpAdServerVideo",
