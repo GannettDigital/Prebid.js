@@ -18,7 +18,7 @@ build-noserv:
 	@git checkout -q tags/$(PREBID_VERSION)
 	@yarn install --silent
 	@git checkout -q master -- modules-noserv.json
-	@gulp build --modules=modules.json --silent
+	@gulp build --modules=modules-noserv.json --silent
 	@git checkout -q master
 	@echo "Prebid (no server) built to ./build/dist/prebid.js"
 
