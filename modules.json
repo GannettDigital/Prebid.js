@@ -1,21 +1,11 @@
 [
-  "appnexusBidAdapter",
-  "atsAnalyticsAdapter",
-  "colossussspBidAdapter",
   "consentManagement",
   "consentManagementUsp",
+  "consentManagementGpp",
   "criteoBidAdapter",
   "dfpAdServerVideo",
   "gdprEnforcement",
-  "gridBidAdapter",
-  "ixBidAdapter",
-  "openxBidAdapter",
   "prebidServerBidAdapter",
-  "rubiconBidAdapter",
-  "sonobiBidAdapter",
   "taboolaBidAdapter",
-  "teadsBidAdapter",
-  "tripleliftBidAdapter",
-  "yahoosspBidAdapter",
-  "yieldmoBidAdapter"
+  "teadsBidAdapter"
 ]
