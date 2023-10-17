@@ -7,7 +7,6 @@ default: build
 
 build:
 	@echo "Building Prebid Version: $(PREBID_VERSION)"
-	@git stash
 	@git checkout -q tags/$(PREBID_VERSION)
 	@yarn install --silent
 	@git checkout -q master -- modules${PREFIX}.json
