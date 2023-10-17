@@ -1,6 +1,7 @@
 [
   "appnexusBidAdapter",
   "colossussspBidAdapter",
+  "consentManagement",
   "consentManagementUsp",
   "consentManagementGpp",
   "criteoBidAdapter",
