@@ -8,7 +8,7 @@ default: build
 build:
 	@echo "Building Prebid Version: $(PREBID_VERSION)"
 	@git checkout -q tags/$(PREBID_VERSION)
-	@yarn install --silent
+	@npm ci
 	@git checkout -q master -- modules${PREFIX}.json
 	@gulp build --modules=modules${PREFIX}.json --silent
 	@git checkout -q master
@@ -17,7 +17,7 @@ build:
 build-dev:
 	@echo "Building Prebid Dev Version: $(PREBID_VERSION)"
 	@git checkout -q tags/$(PREBID_VERSION)
-	@yarn install --silent
+	@npm ci
 	@git checkout -q master -- modules${PREFIX}.json
 	@gulp build-bundle-dev --modules=modules${PREFIX}.json --silent
 	@git checkout -q master
