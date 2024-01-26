@@ -8,5 +8,6 @@
   "gdprEnforcement",
   "prebidServerBidAdapter",
   "taboolaBidAdapter",
-  "teadsBidAdapter"
+  "teadsBidAdapter",
+  "topicsFpdModule"
 ]
