@@ -9,14 +9,17 @@
   "gdprEnforcement",
   "gridBidAdapter",
   "ixBidAdapter",
+  "medianetBidAdapter",
   "openxBidAdapter",
   "prebidServerBidAdapter",
   "rubiconBidAdapter",
+  "smaatoBidAdapter",
   "sonobiBidAdapter",
   "taboolaBidAdapter",
   "teadsBidAdapter",
   "topicsFpdModule",
   "tripleliftBidAdapter",
+  "undertoneBidAdapter",
   "yahoosspBidAdapter",
   "yieldmoBidAdapter"
 ]

@@ -19,6 +19,7 @@
   "teadsBidAdapter",
   "topicsFpdModule",
   "tripleliftBidAdapter",
+  "undertoneBidAdapter",
   "yahoosspBidAdapter",
   "yieldmoBidAdapter"
 ]
