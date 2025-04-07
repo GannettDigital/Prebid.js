@@ -11,6 +11,7 @@ build:
 	@npm ci
 	@git checkout -q master -- modules${PREFIX}.json
 	@gulp build --modules=modules${PREFIX}.json --silent
+	@git checkout -q integrationExamples/gpt/x-domain/creative.html
 	@git checkout -q master
 	@echo "Prebid built to ./build/dist/prebid.js"
 
@@ -20,6 +21,7 @@ build-dev:
 	@npm ci
 	@git checkout -q master -- modules${PREFIX}.json
 	@gulp build-bundle-dev --modules=modules${PREFIX}.json --silent
+	@git checkout -q integrationExamples/gpt/x-domain/creative.html
 	@git checkout -q master
 	@echo "Prebid dev built to ./build/dev/prebid.js"
 
@@ -34,13 +36,13 @@ sync-dev: build-dev
 
 sync: sync-uw sync-sa sync-arkadium
 
-sync-uw: 
+sync-uw:
 	$(MAKE) sync-dist PREFIX="-uw" PREBID_VERSION?=$(shell cat gannett-version-uw.txt)
 	$(MAKE) sync-dev PREFIX="-uw" PREBID_VERSION?=$(shell cat gannett-version-uw.txt)
 	$(MAKE) sync-dist PREFIX="-uw-noserv" PREBID_VERSION?=$(shell cat gannett-version-uw.txt)
 	$(MAKE) sync-dev PREFIX="-uw-noserv" PREBID_VERSION?=$(shell cat gannett-version-uw.txt)
 
-sync-sa: 
+sync-sa:
 	$(MAKE) sync-dist PREFIX="-sa" PREBID_VERSION?=$(shell cat gannett-version-sa.txt)
 	$(MAKE) sync-dev PREFIX="-sa" PREBID_VERSION?=$(shell cat gannett-version-sa.txt)
 	$(MAKE) sync-dist PREFIX="-sa-noserv" PREBID_VERSION?=$(shell cat gannett-version-sa.txt)
