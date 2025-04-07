@@ -5,7 +5,7 @@
   "consentManagementGpp",
   "criteoBidAdapter",
   "dfpAdServerVideo",
-  "gdprEnforcement",
+  "tcfControl",
   "gridBidAdapter",
   "ixBidAdapter",
   "medianetBidAdapter",
@@ -19,6 +19,6 @@
   "topicsFpdModule",
   "tripleliftBidAdapter",
   "undertoneBidAdapter",
-  "yahoosspBidAdapter",
+  "yahooAdsBidAdapter",
   "yieldmoBidAdapter"
 ]
