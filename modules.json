@@ -1,24 +1,8 @@
 [
-  "appnexusBidAdapter",
-  "colossussspBidAdapter",
-  "consentManagementUsp",
-  "consentManagementGpp",
   "criteoBidAdapter",
-  "dfpAdServerVideo",
-  "tcfControl",
-  "gridBidAdapter",
-  "ixBidAdapter",
-  "medianetBidAdapter",
-  "openxBidAdapter",
+  "fpdModule",
   "prebidServerBidAdapter",
-  "rubiconBidAdapter",
-  "smaatoBidAdapter",
-  "sonobiBidAdapter",
   "taboolaBidAdapter",
   "teadsBidAdapter",
-  "topicsFpdModule",
-  "tripleliftBidAdapter",
-  "undertoneBidAdapter",
-  "yahooAdsBidAdapter",
-  "yieldmoBidAdapter"
+  "topicsFpdModule"
 ]
