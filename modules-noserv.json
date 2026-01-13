@@ -13,12 +13,10 @@
   "prebidServerBidAdapter",
   "rubiconBidAdapter",
   "smaatoBidAdapter",
-  "sonobiBidAdapter",
   "taboolaBidAdapter",
   "teadsBidAdapter",
   "topicsFpdModule",
   "tripleliftBidAdapter",
   "undertoneBidAdapter",
-  "yahooAdsBidAdapter",
-  "yieldmoBidAdapter"
+  "yahooAdsBidAdapter"
 ]

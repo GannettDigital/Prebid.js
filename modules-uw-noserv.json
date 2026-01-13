@@ -12,11 +12,9 @@
   "openxBidAdapter",
   "prebidServerBidAdapter",
   "rubiconBidAdapter",
-  "sonobiBidAdapter",
   "taboolaBidAdapter",
   "teadsBidAdapter",
   "topicsFpdModule",
   "tripleliftBidAdapter",
-  "yahooAdsBidAdapter",
-  "yieldmoBidAdapter"
+  "yahooAdsBidAdapter"
 ]
