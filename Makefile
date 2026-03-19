@@ -10,7 +10,7 @@ build:
 	@git checkout -q tags/$(PREBID_VERSION)
 	@npm ci
 	@git checkout -q master -- modules${PREFIX}.json
-	@gulp build --modules=modules${PREFIX}.json --silent
+	@npx gulp build --modules=modules${PREFIX}.json --silent
 	@git checkout -q integrationExamples/gpt/x-domain/creative.html
 	@git checkout -q master
 	@echo "Prebid built to ./build/dist/prebid.js"
@@ -20,7 +20,7 @@ build-dev:
 	@git checkout -q tags/$(PREBID_VERSION)
 	@npm ci
 	@git checkout -q master -- modules${PREFIX}.json
-	@gulp build-bundle-dev --modules=modules${PREFIX}.json --silent
+	@npx gulp build-bundle-dev --modules=modules${PREFIX}.json --silent
 	@git checkout -q integrationExamples/gpt/x-domain/creative.html
 	@git checkout -q master
 	@echo "Prebid dev built to ./build/dev/prebid.js"
