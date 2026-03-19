@@ -1,4 +1,4 @@
-.PHONY: build build-dev sync sync-dev sync-dist sync-uw sync-sa sync-arkadium
+.PHONY: build build-dev sync sync-dev sync-dist sync-uw sync-sa sync-arkadium clean
 
 PREBID_VERSION ?= $(shell cat gannett-version.txt)
 PREFIX=
@@ -8,7 +8,7 @@ default: build
 build:
 	@echo "Building Prebid Version: $(PREBID_VERSION)"
 	@git checkout -q tags/$(PREBID_VERSION)
-	@npm ci
+	@if [ ! -f .npm_installed ]; then npm ci && touch .npm_installed; fi
 	@git checkout -q master -- modules${PREFIX}.json
 	@npx gulp build --modules=modules${PREFIX}.json --silent
 	@git checkout -q integrationExamples/gpt/x-domain/creative.html
@@ -18,7 +18,7 @@ build:
 build-dev:
 	@echo "Building Prebid Dev Version: $(PREBID_VERSION)"
 	@git checkout -q tags/$(PREBID_VERSION)
-	@npm ci
+	@if [ ! -f .npm_installed ]; then npm ci && touch .npm_installed; fi
 	@git checkout -q master -- modules${PREFIX}.json
 	@npx gulp build-bundle-dev --modules=modules${PREFIX}.json --silent
 	@git checkout -q integrationExamples/gpt/x-domain/creative.html
@@ -35,6 +35,7 @@ sync-dev: build-dev
 
 
 sync: sync-uw sync-sa sync-arkadium
+	@rm -f .npm_installed
 
 sync-uw:
 	$(MAKE) sync-dist PREFIX="-uw" PREBID_VERSION?=$(shell cat gannett-version-uw.txt)
@@ -51,3 +52,6 @@ sync-sa:
 sync-arkadium: sync-dist sync-dev
 	$(MAKE) sync-dist PREFIX="-noserv"
 	$(MAKE) sync-dev PREFIX="-noserv"
+
+clean:
+	@rm -f .npm_installed
