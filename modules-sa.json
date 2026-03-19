@@ -1,11 +1,8 @@
 [
-  "consentManagementUsp",
   "consentManagementGpp",
   "criteoBidAdapter",
-  "dfpAdServerVideo",
-  "tcfControl",
+  "fpdModule",
   "prebidServerBidAdapter",
   "taboolaBidAdapter",
-  "teadsBidAdapter",
-  "topicsFpdModule"
+  "teadsBidAdapter"
 ]
